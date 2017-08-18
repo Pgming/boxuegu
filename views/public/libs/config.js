@@ -13,7 +13,8 @@ require.config({
     'uploadify': 'assets/uploadify/jquery.uploadify',
     'region': 'assets/jquery-region/jquery.region',
     'ckeditor': 'assets/ckeditor/ckeditor',
-
+    'utils':'libs/utils',
+    'Jcrop': 'assets/Jcrop/js/Jcrop',
     //      'common': 'js/common'
     'common': 'js/dashboard/common',
     'login': 'js/dashboard/login'

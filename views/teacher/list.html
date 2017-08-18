@@ -150,18 +150,16 @@
         <td data-id="{{v.tc_id}}">
             <!--添加定义属性，存储每一个讲师的id-->
             <a href="#teacherModal" id="chck-info" data-toggle="modal" class="btn btn-info btn-xs check-info">查 看</a>
-            <a href="/views/teacher/add?tc_id={{v.tc_id}}" class="btn btn-info btn-xs">编 辑</a>
-            {{if v.tc_status==0}}
-            <a href="javascript:;" data-status="{{v.tc_status}}" class="btnHandle btn btn-warning btn-xs">注 销</a>
-            {{else}}
-            <a href="javascript:;" data-status="{{v.tc_status}}" class="btnHandle btn btn-warning btn-xs">启用</a>
-            {{/if}}
+            <a href="/views/teacher/add?tc_id={{v.tc_id}}" class="btn btn-info btn-xs">编 辑</a> {{if v.tc_status==0}}
+            <a href="javascript:;" data-status="{{v.tc_status}}" class="btnHandle btn btn-warning btn-xs">注 销</a> {{else}}
+            <a href="javascript:;" data-status="{{v.tc_status}}" class="btnHandle btn btn-warning btn-xs">启用</a> {{/if}}
         </td>
     </tr>
     {{/each}}
 </script>
 <script>
     require(['js/teacher/list']);
+
 </script>
 
 <script type="template/html" id="tc_info_tpl">
@@ -205,7 +203,7 @@
     <tr>
         <td colspan="7">
             <div class="introduce">
-               {{tc_introduce}}
+                {{tc_introduce}}
             </div>
         </td>
     </tr>

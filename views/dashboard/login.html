@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>学IT - 后台管理系统</title>
-   <?php include '/views/common/css.html'?>
+    <?php include '/views/common/css.html'?>
 </head>
+
 <body>
     <!-- 登录 -->
     <div class="login">
@@ -17,20 +19,20 @@
                     <span class="input-group-addon">
                         <i class="fa fa-user"></i>
                     </span>
-                    <input type="text" name="tc_name"  class="form-control" placeholder="用户名" value="前端学院">
+                    <input type="text" name="tc_name" class="form-control" placeholder="用户名" value="前端学院">
                 </div>
                 <div class="input-group input-group-lg">
                     <span class="input-group-addon">
                         <i class="fa fa-key"></i>
                     </span>
-                    <input type="password" name="tc_pass"  class="form-control" placeholder="密码" value="123456">
+                    <input type="password" name="tc_pass" class="form-control" placeholder="密码" value="123456">
                 </div>
                 <button type="submit" class="btn btn-lg btn-primary btn-block">登 录</button>
             </form>
         </div>
     </div>
-    
-   <?php include '/views/common/script.html'?>
+
+    <?php include '/views/common/script.html'?>
     <!--<script>
         //直接给form注册事件
         $('#formLogin').submit(function(e){
@@ -64,4 +66,5 @@
         require(['login']);
     </script>
 </body>
+
 </html>

@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>学IT - 后台管理系统</title>
-     <?php  include '/views/common/css.html'?>
+    <?php  include '/views/common/css.html'?>
 </head>
+
 <body>
-    
+
     <!-- 侧边栏 -->
     <?php include '/views/common/aside.html'?>
     <!-- 主体 -->
     <div class="main">
         <div class="container-fluid">
             <!-- 头部 -->
-           <?php include '/views/common/head.html'?>
+            <?php include '/views/common/head.html'?>
             <div class="body course-add">
                 <!-- 面包屑 -->
                 <ol class="breadcrumb">
@@ -36,20 +38,17 @@
                     <ul class="forwards list-unstyled">
                         <li>
                             <a href="add_step1" class="done">
-                            <b class="fa fa-check"></b>
-                            基本信息
+                                <b class="fa fa-check"></b> 基本信息
                             </a>
                         </li>
                         <li>
                             <a href="add_step2" class="done">
-                            <b class="fa fa-check"></b>
-                            课程图片
+                                <b class="fa fa-check"></b> 课程图片
                             </a>
                         </li>
                         <li>
                             <a href="add_step3" class="active">
-                            <b>3</b>
-                            课时管理
+                                <b>3</b> 课时管理
                             </a>
                         </li>
                     </ul>
@@ -59,8 +58,7 @@
                         <div class="title">
                             <h5>课时管理 <small>LESSON MANAGE</small></h5>
                             <a src="javascript:;" data-toggle="modal" data-target="#lesson" class="btn btn-success btn-sm pull-right">
-                                <i class="fa fa-plus"></i>
-                                课时
+                                <i class="fa fa-plus"></i> 课时
                             </a>
                         </div>
                         <div class="lessons">
@@ -163,19 +161,16 @@
                         <div class="form-group form-inline">
                             <label for="" class="col-md-2 control-label">时长</label>
                             <div class="col-md-8">
-                                <input type="text" class="form-control input-sm small">
-                                分
-                                <input type="text" class="form-control input-sm small">
-                                秒
-                                 <p class="help-block">时长必须为整数。</p>
+                                <input type="text" class="form-control input-sm small"> 分
+                                <input type="text" class="form-control input-sm small"> 秒
+                                <p class="help-block">时长必须为整数。</p>
                             </div>
                         </div>
                         <div class="form-group form-inline">
                             <label for="" class="col-md-2 control-label">建议学习时长</label>
                             <div class="col-md-8">
-                                <input type="text" class="form-control input-sm small">
-                                小时
-                                 <p class="help-block">（如未设置，则默认学习时长为视频时长3倍取整。）</p>
+                                <input type="text" class="form-control input-sm small"> 小时
+                                <p class="help-block">（如未设置，则默认学习时长为视频时长3倍取整。）</p>
                             </div>
                         </div>
                     </form>
@@ -188,6 +183,7 @@
         </div>
     </div>
 
-   <?php include '/views/common/script.html'?>
+    <?php include '/views/common/script.html'?>
 </body>
+
 </html>
